@@ -1,8 +1,8 @@
 # Tencent::Ai
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tencent/ai`. To experiment with that code, run `bin/console` for an interactive prompt.
+A simple & unofficial Tencent AI SDK
 
-TODO: Delete this and the text above, and describe your gem
+[Tencent AI](https://ai.qq.com/doc/)
 
 ## Installation
 
