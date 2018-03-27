@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tencent-ai'
+gem 'tencent-ai', git: 'git@github.com:raydya/tencent-ai.git'
 ```
 
 And then execute:
@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+create `tencent-ai.rb` in the `initializers` directory:
+
+```ruby
+Tencent::Ai.configure do |config|
+  config.app_id  = 'your app id here'
+  config.app_key = 'your app key here'
+end
+```
+
+call `nlp`:
+
+```ruby
+Tencent::Ai.nlp.seg('南京市长江大桥')
+```
 
 ## Development
 
