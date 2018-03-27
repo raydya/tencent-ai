@@ -9,7 +9,7 @@ A simple & unofficial Tencent AI SDK
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tencent-ai', git: 'git@github.com:raydya/tencent-ai.git'
+gem 'tencent-ai'
 ```
 
 And then execute:
