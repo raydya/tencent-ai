@@ -18,25 +18,13 @@ module Tencent
         params        = {
           app_id:     app_id,
           time_stamp: Time.now.to_i.to_s,
-          nonce_str:  rand(999999).to_s,
+          nonce_str:  rand(999999).to_s
         }.merge data
         params[:sign] = self.class.sign(params, app_key)
         params
       end
 
       def post(path, payload)
-        # req  = NET::HTTP::Post.new uri
-        # req.set_content_type('application/x-www-form-urlencoded')
-        # req.
-        # res = Net::HTTP.post_form uri, payload
-        # if res.kind_of?(Net::HTTPSuccess)
-        #   json = JSON.parse(res.body, object_class: OpenStruct)
-        #   raise json.msg unless json.ret == 0
-        #   json.data
-        # else
-        #   raise res.value
-        # end
-        #
         res = RestClient.post(uri(path), payload)
         JSON.parse(res.body, object_class: OpenStruct).data
       end
