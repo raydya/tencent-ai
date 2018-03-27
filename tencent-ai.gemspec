@@ -1,18 +1,17 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "tencent/ai/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "tencent-ai"
-  spec.version       = Tencent::Ai::VERSION
-  spec.authors       = ["zhanglei"]
-  spec.email         = ["dya.ilaempire@gmail.com"]
+  spec.name    = "tencent-ai"
+  spec.version = Tencent::Ai::VERSION
+  spec.authors = ["zhanglei"]
+  spec.email   = ["dya.ilaempire@gmail.com"]
 
-  spec.summary       = %q{A Tencent-ai sdk gem.}
-  spec.description   = %q{A Tencent-ai sdk gem.}
-  spec.homepage      = "https://github.com/raydya/tencent-ai"
-  spec.license       = "MIT"
+  spec.summary     = %q{A Tencent-ai sdk.}
+  spec.description = %q{A Tencent-ai sdk.}
+  spec.homepage    = "https://github.com/raydya/tencent-ai"
+  spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
