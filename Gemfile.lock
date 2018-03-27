@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     tencent-ai (0.1.0)
-      rest-client
+      rest-client (~> 2.0.2)
 
 GEM
   remote: https://rubygems.org/
